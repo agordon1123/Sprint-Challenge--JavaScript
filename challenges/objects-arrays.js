@@ -179,10 +179,10 @@ The zoos need to know their total animal population across the United States.  F
 */
 const populationTotal = 0;
 
-zooAnimals.reduce((acc, animal, idx) => {
+zooAnimals.reduce((acc, animal) => {
   acc = populationTotal + animal.population;
   return acc;
-})
+}, 0)
 
 console.log(populationTotal);
 
